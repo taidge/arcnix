@@ -1,5 +1,5 @@
 [package]
-name = "arcnix-desktop"
+name = "arcnix"
 version.workspace = true
 edition.workspace = true
 license.workspace = true

@@ -15,7 +15,13 @@ A friendly desktop workspace for managing servers over SSH, built with Rust, Glo
 Building requires **Rust 1.99+**, Windows MSVC build tools, native Windows Perl (such as Strawberry Perl) and NASM. Running requires WebView2 Runtime. OpenSSL is linked statically; system SSH and OpenSSL are not required.
 
 ```powershell
-cargo run --locked -p arcnix-desktop --bin arcnix
+cargo install arcnix --version 0.1.1 --locked
+```
+
+Or run from source:
+
+```powershell
+cargo run --locked -p arcnix --bin arcnix
 ```
 
 To use a specific configuration, append `-- --config ./my-config.json`.

@@ -7,7 +7,7 @@ from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSETS = ROOT / "crates/arcnix-desktop/assets"
+ASSETS = ROOT / "crates/arcnix/assets"
 
 
 def main():

@@ -15,7 +15,13 @@
 构建需要 **Rust 1.99+**、Windows MSVC 构建工具、原生 Windows Perl（如 Strawberry Perl）和 NASM；运行需要 WebView2 Runtime。SSH 使用静态链接的 OpenSSL，无需系统 SSH 或 OpenSSL。
 
 ```powershell
-cargo run --locked -p arcnix-desktop --bin arcnix
+cargo install arcnix --version 0.1.1 --locked
+```
+
+或从源码运行：
+
+```powershell
+cargo run --locked -p arcnix --bin arcnix
 ```
 
 使用指定配置文件：在命令末尾添加 `-- --config ./my-config.json`。

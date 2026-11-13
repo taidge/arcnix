@@ -185,7 +185,7 @@ def main():
         for name in ("arcnix.svg", "arcnix-dark.svg", "arcnix-light.svg"):
             import cairosvg
             from io import BytesIO
-            image = Image.open(BytesIO(cairosvg.svg2png(url=str(ROOT / "crates/arcnix-desktop/assets" / name)))).convert("RGBA")
+            image = Image.open(BytesIO(cairosvg.svg2png(url=str(ROOT / "crates/arcnix/assets" / name)))).convert("RGBA")
             assert image.size == (512, 512)
             assert all(image.getpixel(corner)[3] == 0 for corner in ((0, 0), (511, 0), (0, 511), (511, 511)))
             assert image.getchannel("A").getbbox() is not None

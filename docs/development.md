@@ -6,7 +6,7 @@ Rust + Glory + Sapid 桌面服务器管理工作台。通过 SSH 管理多台服
 
 ## 项目图标
 
-图标源文件为 [`arcnix.svg`](../crates/arcnix-desktop/assets/arcnix.svg)，画布为 **512×512**，背景完全透明。四条单层服务器分别倾斜 ±45° 围成菱形，连接中央汇聚节点，表达多台服务器的统一管理。导航栏随主题使用同源的 `arcnix-dark.svg`／`arcnix-light.svg`，Windows 程序文件、窗口与任务栏使用通用蓝绿色版本的多尺寸 ICO。
+图标源文件为 [`arcnix.svg`](../crates/arcnix/assets/arcnix.svg)，画布为 **512×512**，背景完全透明。四条单层服务器分别倾斜 ±45° 围成菱形，连接中央汇聚节点，表达多台服务器的统一管理。导航栏随主题使用同源的 `arcnix-dark.svg`／`arcnix-light.svg`，Windows 程序文件、窗口与任务栏使用通用蓝绿色版本的多尺寸 ICO。
 
 修改 SVG 后运行 `python tools/generate_app_icon.py` 更新深浅主题 SVG、PNG 预览与 ICO（需要 `CairoSVG` 和 `Pillow`）；常规 Cargo 构建使用已生成的 ICO，无需 Python。
 
@@ -35,13 +35,13 @@ SSH 使用源码编译并静态链接的 OpenSSL，支持 OpenSSH Ed25519 私钥
 确保 `perl` 和 `nasm` 可从构建终端调用；便携版 Perl 也可以通过 `OPENSSL_SRC_PERL` 指定其 `perl.exe` 完整路径。Git for Windows 自带的 Perl 不适用于这里的 MSVC OpenSSL 构建。不要设置 `OPENSSL_NO_VENDOR` 或 `LIBSSH2_SYS_USE_PKG_CONFIG` 来改用系统库；构建后的程序应检查导入表没有 `libssl`／`libcrypto` DLL 依赖。
 
 ```powershell
-cargo run --locked -p arcnix-desktop --bin arcnix
+cargo run --locked -p arcnix --bin arcnix
 ```
 
 使用独立配置文件：
 
 ```powershell
-cargo run --locked -p arcnix-desktop --bin arcnix -- --config ./my-config.json
+cargo run --locked -p arcnix --bin arcnix -- --config ./my-config.json
 ```
 
 界面和状态逻辑由 Rust 编写，Glory Wry 使用系统 WebView 作为桌面渲染宿主；无需 Node、前端打包、Web 服务器或远程 Agent。使用发布的 Glory `0.7.0` 和 Sapid `0.7.1`，不依赖机器上的其他源码仓库。
@@ -94,7 +94,7 @@ Ctrl+C 在有选中文字时复制，否则向远程程序发送中断；Ctrl+Sh
 
 终端通过内置 SSH 库申请 `xterm-256color` PTY，复用当前连接的认证信息与已核对的主机指纹建立独立传输连接，因此不会被文件上传下载阻塞。认证信息仅保留在当前连接的进程内存中，断开后清理，不写入配置；终端输入输出不写入应用操作日志。远程 OSC 52 剪贴板写入及链接激活已禁用。
 
-界面状态、连接和交互桥接由 Rust 管理，终端字符渲染使用随程序本地打包的 xterm.js，不需要 Node、网络 CDN 或系统 SSH 客户端。第三方版本、来源、校验值与 MIT 许可证位于 `crates/arcnix-desktop/assets/vendor`。当前每个活动服务器工作区提供一个终端；全屏程序在真实 Linux 主机上的兼容性仍需实际环境验证。
+界面状态、连接和交互桥接由 Rust 管理，终端字符渲染使用随程序本地打包的 xterm.js，不需要 Node、网络 CDN 或系统 SSH 客户端。第三方版本、来源、校验值与 MIT 许可证位于 `crates/arcnix/assets/vendor`。当前每个活动服务器工作区提供一个终端；全屏程序在真实 Linux 主机上的兼容性仍需实际环境验证。
 
 ## 系统软件
 
@@ -161,7 +161,7 @@ $fixture = Get-Content artifacts/fixture.json | ConvertFrom-Json
 $env:ARCNIX_TEST_SSH_ADDR = $fixture.address
 $env:ARCNIX_TEST_SSH_KEY = $fixture.client_key
 cargo test --locked -p arcnix-core --test sftp_integration -- --ignored
-cargo test --locked -p arcnix-desktop -- --ignored
+cargo test --locked -p arcnix -- --ignored
 cargo test --workspace --locked -- --include-ignored
 ```
 
@@ -174,7 +174,7 @@ cargo test --workspace --locked -- --include-ignored
 
 ```text
 crates/arcnix-core       配置、领域类型、本地文件、SSH/SFTP
-crates/arcnix-desktop    Rust 桌面 UI、后台任务与事件桥
+crates/arcnix    Rust 桌面 UI、后台任务与事件桥
 tools/sftp_fixture.py   仅用于回环测试的 SSH/SFTP 服务
 ```
 

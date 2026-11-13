@@ -9,6 +9,38 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "330a5ed07fa54e4702c9d6c4174f74427fc0ef6e214bbd677ae50a5099946470"
 
 [[package]]
+name = "arcnix"
+version = "0.1.1"
+dependencies = [
+ "anyhow",
+ "arcnix-core",
+ "async-channel",
+ "base64 0.22.1",
+ "glory",
+ "sapid",
+ "serde",
+ "serde_json",
+ "time",
+ "windows",
+ "winresource",
+ "zeroize",
+]
+
+[[package]]
+name = "arcnix-core"
+version = "0.1.1"
+dependencies = [
+ "anyhow",
+ "base64 0.22.1",
+ "directories",
+ "serde",
+ "serde_json",
+ "sha2",
+ "ssh2",
+ "windows-sys 0.61.2",
+]
+
+[[package]]
 name = "async-channel"
 version = "2.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1163,38 +1195,6 @@ checksum = "38c0b942f458fe50cdac086d2f946512305e5631e720728f2a61aabcd47a6264"
 dependencies = [
  "quote",
  "syn 2.0.119",
-]
-
-[[package]]
-name = "arcnix-core"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "base64 0.22.1",
- "directories",
- "serde",
- "serde_json",
- "sha2",
- "ssh2",
- "windows-sys 0.61.2",
-]
-
-[[package]]
-name = "arcnix-desktop"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "async-channel",
- "base64 0.22.1",
- "glory",
- "arcnix-core",
- "sapid",
- "serde",
- "serde_json",
- "time",
- "windows",
- "winresource",
- "zeroize",
 ]
 
 [[package]]

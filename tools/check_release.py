@@ -11,7 +11,7 @@ def main():
     parser.add_argument("tag", nargs="?", default=os.environ.get("GITHUB_REF_NAME", ""))
     args = parser.parse_args()
     if not re.fullmatch(r"v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-[0-9A-Za-z.-]+)?", args.tag):
-        parser.error("Expected a release tag such as v0.1.0")
+        parser.error("Expected a release tag such as v0.1.1")
     root = Path(__file__).resolve().parents[1]
     workspace = tomllib.loads((root / "Cargo.toml").read_text(encoding="utf-8"))["workspace"]
     version = workspace["package"]["version"]

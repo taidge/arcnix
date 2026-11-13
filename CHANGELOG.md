@@ -1,5 +1,11 @@
 # 改进记录
 
+## 0.1.1 — 桌面 crate 更名为 arcnix
+
+- 桌面 crate 从 `arcnix-desktop` 更名为 `arcnix`，源码目录同步调整为 `crates/arcnix`。
+- 可通过 `cargo install arcnix --version 0.1.1 --locked` 安装，可执行程序仍为 `arcnix.exe`。
+- 工作区和内部 `arcnix-core` 依赖统一升级至 `0.1.1`，同步更新文档、脚本和发布配置。
+
 ## 2026-11-13 — 项目更名为 Arcnix
 
 - 工作区目录统一为 `arcnix`，Rust 包为 `arcnix-core`、`arcnix-desktop`，可执行程序为 `arcnix.exe`。

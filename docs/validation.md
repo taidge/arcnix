@@ -2,7 +2,7 @@
 
 ## Arcnix 更名验证（2026-11-13）
 
-实际工作区为 `D:\Works\arcnix`，`cargo metadata --no-deps --format-version 1` 返回的产物目录为 `D:\Works\arcnix\target`。两个包为 `arcnix-core`、`arcnix-desktop`，桌面程序为 `arcnix.exe`，Windows 产品名称和命令行帮助均为 Arcnix。
+实际工作区为 `D:\Works\arcnix`，`cargo metadata --no-deps --format-version 1` 返回的产物目录为 `D:\Works\arcnix\target`。两个包为 `arcnix-core`、`arcnix`，桌面程序为 `arcnix.exe`，Windows 产品名称和命令行帮助均为 Arcnix。
 
 工作区 103 项 Rust 测试全部通过，包含显式启用的回环 SSH/SFTP、主机指纹、密钥认证、终端、资源、日志及包管理测试；格式检查、构建和严格 Clippy 通过。导航脚本的 6 组实际 WebView 验证及服务器树回归通过，覆盖改名后的资源加载、SSH 连接、终端、SFTP、双主题及拖动排序。图标透明度检查改为检查四角透明及图案非空，避免把图案内部的固定像素误认为背景。
 
