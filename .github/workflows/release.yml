@@ -38,9 +38,9 @@ jobs:
       - name: Publish dependency and desktop crates
         shell: pwsh
         env:
-          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CRATES_TOKEN }}
         run: |
           if (-not $env:CARGO_REGISTRY_TOKEN) {
-            throw 'Configure the repository secret CARGO_REGISTRY_TOKEN before pushing a release tag.'
+            throw 'Make the CRATES_TOKEN Actions secret available to this repository before pushing a release tag.'
           }
           cargo publish --workspace --locked

@@ -2,8 +2,9 @@
 
 ## One-time setup
 
-The GitHub repository is `taidge/arcnix`. Configure a crates.io API token in its
-Actions secret **CARGO_REGISTRY_TOKEN**. The token must be permitted to publish
+The GitHub repository is `taidge/arcnix`. Publishing uses the existing organization
+Actions secret **CRATES_TOKEN**, which is available to this repository. The workflow
+passes it to Cargo as `CARGO_REGISTRY_TOKEN`. The token must be permitted to publish
 `arcnix-core` and `arcnix-desktop`; an initial release also needs permission to
 create these crate names. Verify the crates.io account's email before publishing.
 Never put the token in the repository or release commands.
@@ -40,7 +41,7 @@ formatting settings. Compilation, Clippy, tests and publishing use **Rust 1.99.0
 
 ## 发布说明
 
-- 首次发布前，在 GitHub 仓库的 Actions secrets 中设置 `CARGO_REGISTRY_TOKEN`，并确认 crates.io 邮箱已验证、令牌允许发布这两个 crate。
+- 发布使用此仓库可访问的组织级 Actions secret `CRATES_TOKEN`，通过 `CARGO_REGISTRY_TOKEN` 环境变量传给 Cargo。首次发布前确认 crates.io 邮箱已验证、令牌允许发布这两个 crate。
 - 更新工作区版本、内部依赖版本、锁文件及更新记录，提交至 `main`。
 - CI 通过后推送同版本 tag（如 `v0.1.0`），发布流程会重新检查后发布至 crates.io。
 - `--dry-run` 仅检查打包，不上传。版本不一致时发布会被阻止；日常提交不会触发发布。
