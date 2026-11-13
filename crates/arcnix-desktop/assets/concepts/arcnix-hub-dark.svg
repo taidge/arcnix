@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Arcnix — Compact Central Hub</title>
+  <desc id="desc">Four closely grouped server stacks converge on a prominent central management hub. Transparent background.</desc>
+  <path d="M128 200C128 232 184 224 222 240M384 200C384 232 328 224 290 240M128 312C128 280 184 288 222 272M384 312C384 280 328 288 290 272" stroke="#6FE0C1" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="58" fill="#6FE0C1"/>
+  <circle cx="256" cy="256" r="24" fill="#244E7B"/>
+  <rect x="24" y="24" width="208" height="80" rx="22" fill="#E0F2FC"/>
+  <circle cx="60" cy="64" r="12" fill="#168C80"/>
+  <path d="M108 64H196" stroke="#244E7B" stroke-width="16" stroke-linecap="round"/>
+  <rect x="24" y="120" width="208" height="80" rx="22" fill="#BCE6F0"/>
+  <circle cx="60" cy="160" r="12" fill="#168C80"/>
+  <path d="M108 160H196" stroke="#244E7B" stroke-width="16" stroke-linecap="round"/>
+  <rect x="280" y="24" width="208" height="80" rx="22" fill="#E0F2FC"/>
+  <circle cx="316" cy="64" r="12" fill="#168C80"/>
+  <path d="M364 64H452" stroke="#244E7B" stroke-width="16" stroke-linecap="round"/>
+  <rect x="280" y="120" width="208" height="80" rx="22" fill="#BCE6F0"/>
+  <circle cx="316" cy="160" r="12" fill="#168C80"/>
+  <path d="M364 160H452" stroke="#244E7B" stroke-width="16" stroke-linecap="round"/>
+  <rect x="24" y="312" width="208" height="80" rx="22" fill="#E0F2FC"/>
+  <circle cx="60" cy="352" r="12" fill="#168C80"/>
+  <path d="M108 352H196" stroke="#244E7B" stroke-width="16" stroke-linecap="round"/>
+  <rect x="24" y="408" width="208" height="80" rx="22" fill="#BCE6F0"/>
+  <circle cx="60" cy="448" r="12" fill="#168C80"/>
+  <path d="M108 448H196" stroke="#244E7B" stroke-width="16" stroke-linecap="round"/>
+  <rect x="280" y="312" width="208" height="80" rx="22" fill="#E0F2FC"/>
+  <circle cx="316" cy="352" r="12" fill="#168C80"/>
+  <path d="M364 352H452" stroke="#244E7B" stroke-width="16" stroke-linecap="round"/>
+  <rect x="280" y="408" width="208" height="80" rx="22" fill="#BCE6F0"/>
+  <circle cx="316" cy="448" r="12" fill="#168C80"/>
+  <path d="M364 448H452" stroke="#244E7B" stroke-width="16" stroke-linecap="round"/>
+</svg>

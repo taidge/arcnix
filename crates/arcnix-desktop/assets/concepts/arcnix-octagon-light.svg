@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Arcnix — Eight Servers</title>
+  <desc id="desc">Eight rectangular server units form an octagonal ring inspired by the arrangement of the bagua. Transparent background.</desc>
+  <g transform="rotate(0 256 256)">
+    <rect x="188" y="36" width="136" height="64" rx="15" fill="#32659C"/>
+    <circle cx="214" cy="68" r="9" fill="#96E5D2"/>
+    <path d="M246 68H298" stroke="#EAF5FF" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(45 256 256)">
+    <rect x="188" y="36" width="136" height="64" rx="15" fill="#244E7B"/>
+    <circle cx="214" cy="68" r="9" fill="#96E5D2"/>
+    <path d="M246 68H298" stroke="#EAF5FF" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(90 256 256)">
+    <rect x="188" y="36" width="136" height="64" rx="15" fill="#32659C"/>
+    <circle cx="214" cy="68" r="9" fill="#96E5D2"/>
+    <path d="M246 68H298" stroke="#EAF5FF" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(135 256 256)">
+    <rect x="188" y="36" width="136" height="64" rx="15" fill="#244E7B"/>
+    <circle cx="214" cy="68" r="9" fill="#96E5D2"/>
+    <path d="M246 68H298" stroke="#EAF5FF" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(180 256 256)">
+    <rect x="188" y="36" width="136" height="64" rx="15" fill="#32659C"/>
+    <circle cx="214" cy="68" r="9" fill="#96E5D2"/>
+    <path d="M246 68H298" stroke="#EAF5FF" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(225 256 256)">
+    <rect x="188" y="36" width="136" height="64" rx="15" fill="#244E7B"/>
+    <circle cx="214" cy="68" r="9" fill="#96E5D2"/>
+    <path d="M246 68H298" stroke="#EAF5FF" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(270 256 256)">
+    <rect x="188" y="36" width="136" height="64" rx="15" fill="#32659C"/>
+    <circle cx="214" cy="68" r="9" fill="#96E5D2"/>
+    <path d="M246 68H298" stroke="#EAF5FF" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(315 256 256)">
+    <rect x="188" y="36" width="136" height="64" rx="15" fill="#244E7B"/>
+    <circle cx="214" cy="68" r="9" fill="#96E5D2"/>
+    <path d="M246 68H298" stroke="#EAF5FF" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>

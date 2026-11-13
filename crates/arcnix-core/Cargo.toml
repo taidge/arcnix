@@ -1,0 +1,26 @@
+[package]
+name = "arcnix-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "SSH and SFTP server management primitives for Arcnix"
+repository.workspace = true
+homepage.workspace = true
+readme = "../../README.md"
+keywords = ["ssh", "sftp", "server", "management"]
+categories = ["network-programming"]
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+directories = "6"
+# WinCNG cannot authenticate Ed25519 keys. Build and statically link OpenSSL
+# so the shipped client needs neither system OpenSSL nor the ssh executable.
+ssh2 = { version = "0.9.7", features = ["openssl-on-win32", "vendored-openssl"] }
+sha2 = "0.10"
+base64 = "0.22"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = ["Win32_Storage_FileSystem"] }

@@ -1,0 +1,4 @@
+[env]
+# Keep SSH's crypto backend consistent even on machines with vcpkg installed.
+# libssh2-sys otherwise probes a system libssh2 before its bundled source build.
+LIBSSH2_NO_VCPKG = "1"

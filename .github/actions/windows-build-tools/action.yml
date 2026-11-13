@@ -1,0 +1,17 @@
+name: Windows build tools
+description: Prepare native Perl and NASM for vendored OpenSSL.
+runs:
+  using: composite
+  steps:
+    - shell: pwsh
+      run: |
+        $perl = 'C:\Strawberry\perl\bin\perl.exe'
+        if (-not (Test-Path -LiteralPath $perl)) {
+          choco install strawberryperl --yes --no-progress
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+        }
+        choco install nasm --yes --no-progress
+        if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+        if (-not (Test-Path -LiteralPath $perl)) { throw 'Native Windows Perl was not found.' }
+        "OPENSSL_SRC_PERL=$perl" >> $env:GITHUB_ENV
+        "${env:ProgramFiles}\NASM" >> $env:GITHUB_PATH

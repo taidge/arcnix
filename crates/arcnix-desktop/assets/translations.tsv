@@ -1,0 +1,587 @@
+该服务器的文件冲突处理已恢复为每次询问	File conflicts for this server will ask each time.
+后台任务已停止	The background worker has stopped.
+请先连接原服务器再重试传输	Reconnect to the original server before retrying.
+配置读取失败，已禁止覆盖。请修复配置文件后重新启动。	The configuration could not be read. Repair it and restart before saving changes.
+保存失败: {e:#}	Could not save: {e:#}
+系统软件任务正在执行，请等待完成后切换服务器	Wait for the software operation to finish before switching servers.
+请先新建并选择服务器	Add and select a server first.
+系统软件任务正在执行，请等待完成后断开连接	Wait for the software operation to finish before disconnecting.
+下载已拒绝：所选远程名称无法安全保存为本地文件名	Download refused: a selected remote name cannot be saved safely on this computer.
+请先连接并成功读取两个目录，再选择文件或目录；不传输符号链接	Connect and load both directories, then select files or folders. Symbolic links are not transferred.
+请先成功读取目标目录	Load the destination directory first.
+请输入不含路径分隔符的文件名	Enter a file name without path separators.
+本地名称包含无效字符、设备名或路径前缀	The local name contains invalid characters, a device name, or a path prefix.
+重命名时请选择一个项目	Select one item to rename.
+刚刚	Just now
+{} 分钟前	{} minutes ago
+{} 小时前	{} hours ago
+{} 天前	{} days ago
+关闭对话框	Close dialog
+SSH 已连接	SSH connected
+SSH 正在连接…	Connecting SSH…
+尚未添加服务器	No servers added
+请选择左侧服务器	Select a server on the left
+SSH 未连接	SSH disconnected
+断开连接	Disconnect
+取消连接	Cancel connection
+添加服务器	Add server
+连接服务器	Connect to server
+服务器管理工作台	Server workspace
+文件管理	Files
+系统软件	Software
+资源概览	Resources
+系统日志	System logs
+查看操作日志	View operation log
+忽略提示	Dismiss notification
+SSH 工作台	SSH workspace
+{} 个传输任务	{} transfers
+关闭操作菜单	Close action menu
+确认服务器身份	Verify server identity
+首次连接此服务器，请核对 SSH 主机指纹。	Verify the SSH host fingerprint before your first connection.
+确认指纹后再继续认证。可选择仅本次信任，或保存供下次连接校验。	Continue only after verifying the fingerprint. Trust it once or save it for future connections.
+取消	Cancel
+仅本次信任	Trust once
+信任并保存	Trust and save
+配置读取失败，禁止覆盖: {e:#}	Configuration could not be read; saving is disabled: {e:#}
+Arcnix 已就绪。新建服务器并连接，或浏览本地目录。	Arcnix is ready. Add a server and connect, or browse local files.
+拒绝连接：主机密钥发生变化。已保存：{}；当前：{fingerprint}。请通过可信渠道核实后手动更新配置。	Connection refused: the host key changed. Saved: {}; current: {fingerprint}. Verify it through a trusted channel before updating configuration.
+SSH 认证成功	SSH authentication succeeded.
+服务器未启用 SFTP；SSH 系统软件管理仍可使用。	SFTP is unavailable; SSH software management remains available.
+连接已断开	Disconnected.
+读取目录失败：{message}	Could not read directory: {message}
+SSH 连接已断开：{message}	SSH connection lost: {message}
+传输结果：写入 {} 个文件，跳过 {} 个文件	Transfer result: wrote {} files; skipped {} files.
+传输未完成：{error}	Transfer did not finish: {error}
+操作失败：{message}	Operation failed: {message}
+错误：{message}	Error: {message}
+连接失败：{message}	Connection failed: {message}
+SSH 配置导入：{warning}	SSH import: {warning}
+配置读取失败，禁止覆盖	Configuration could not be read; saving is disabled.
+导入完成：新增 {imported} 台，跳过 {skipped} 台重复站点；{warning_count} 条提示	Imported {imported} servers; skipped {skipped} duplicates; {warning_count} notices.
+导入失败：{e:#}	Import failed: {e:#}
+Arcnix — 服务器管理工作台	Arcnix — Server workspace
+没有可读取的日志源。请检查服务器日志服务和当前账号的读取权限。	No readable log sources. Check the server logging service and account permissions.
+等待下一次采样	Waiting for the next sample
+错误及以上	Error and higher
+警告及以上	Warning and higher
+全部级别	All levels
+日志时间范围：{label}	Log period: {label}
+日志严重级别：{label}	Log severity: {label}
+紧急	Emergency
+警报	Alert
+严重	Critical
+错误	Error
+警告	Warning
+通知	Notice
+信息	Info
+调试	Debug
+当前条件下没有日志记录。	No log entries for this query.
+没有匹配此筛选的记录。	No entries match this filter.
+读取最近 200 条记录；仅使用当前账号的读取权限。	Read up to 200 recent entries using the current account's permissions.
+重新检测日志源	Detect log sources again
+刷新系统日志	Refresh system logs
+连接服务器后查看系统日志。	Connect to a server to view system logs.
+服务单元（留空查看全部）	Service unit (leave empty for all)
+日志服务单元	Log service unit
+时间范围	Time range
+最近一小时	Last hour
+今天	Today
+本次启动	Current boot
+严重级别	Severity
+查询日志	Query logs
+筛选当前日志	Filter current logs
+筛选当前结果…	Filter current results…
+切换日志自动刷新	Toggle automatic log refresh
+自动刷新：开 · 5 秒	Auto refresh: On · 5 seconds
+自动刷新：关	Auto refresh: Off
+系统任务执行中，日志刷新已暂停	Log refresh is paused during the system operation.
+正在检测可用日志源…	Detecting available log sources…
+正在读取日志…	Reading logs…
+等待查询	Waiting for a query
+{} 条记录 · 最近读取 {}{}	{} entries · Last read {}{}
+ · 显示上次成功结果	 · Showing the last successful result
+每 3 秒读取一次数值，仅在此页面自动刷新。	Read values every 3 seconds, only while this page is open.
+每 {} 秒读取一次数值，仅在此页面自动刷新。	Read values every {} seconds, only while this page is open.
+刷新资源数值	Refresh resource values
+连接服务器后查看 CPU、内存、磁盘和网络。	Connect to a server to view CPU, memory, disks, and network.
+系统任务执行中，自动采样已暂停	Automatic sampling is paused during the system operation.
+正在采样…	Sampling…
+等待采样	Waiting for a sample
+最近采样 {}{}	Last sampled {}{}
+ · 显示上次成功数值	 · Showing the last successful values
+CPU 使用率	CPU usage
+{} 逻辑处理器 · {}	{} logical processors · {}
+两次采样计算	Calculated from two samples
+等待 CPU 采样	Waiting for CPU sampling
+内存使用	Memory usage
+{} / {} · 可用 {}	{} / {} · {} available
+交换空间	Swap
+未启用	Disabled
+系统负载	System load
+1 / 5 / 15 分钟	1 / 5 / 15 minutes
+运行时间 {} 天 {} 小时 {} 分钟	Uptime: {} days {} hours {} minutes
+磁盘	Disks
+网络接口	Network interfaces
+接收 / 发送速率由两次采样计算；累计数值自接口启动起计。	Receive and send rates use two samples; totals are counted since the interface started.
+接收 {} · 发送 {}	Receive {} · Send {}
+累计 ↓ {} / ↑ {}	Total ↓ {} / ↑ {}
+[凭据已隐藏]	[credential hidden]
+服务器	Servers
+新建服务器	New server
+搜索	Search
+所有服务器  {}	All servers  {}
+未分组	Ungrouped
+{}的分组操作	Actions for group {}
+重命名分组	Rename group
+移除分组	Remove group
+站点	Saved servers
+ · 已连接	 · Connected
+ · 连接中	 · Connecting
+{}的服务器操作	Actions for {}
+编辑服务器	Edit server
+重置文件冲突选择	Reset file conflict choices
+删除服务器	Delete server
+还没有服务器	No servers yet
+添加站点，或导入已有 SSH 配置。	Add a server or import an SSH configuration.
+添加第一台服务器	Add your first server
+新建分组	New group
+导入 SSH 配置	Import SSH configuration
+SSH / SFTP · 凭据不写入配置	SSH / SFTP · Credentials are not stored
+当前配置读取失败，不能覆盖。请修复配置后重启。	The configuration could not be read. Repair it and restart before saving changes.
+名称	Name
+主机地址	Host address
+端口	Port
+用户名	Username
+认证方式	Authentication
+密码	Password
+私钥	Private key
+私钥文件路径	Private key file
+分组	Group
+初始远程目录	Initial remote directory
+密码与私钥口令将在连接时输入。	Enter the password or key passphrase when connecting.
+保存服务器	Save server
+系统软件任务正在执行，完成后才能修改当前服务器	Wait for the software operation to finish before editing this server.
+端口应为 1–65535 的数字	Port must be a number from 1 to 65535.
+分组名称	Group name
+保存分组	Save group
+导入 Host 站点与密钥路径，不读取私钥内容或执行配置命令。	Import Host entries and key paths without reading private key contents or running configuration commands.
+SSH 配置文件路径	SSH configuration file
+不支持的代理、Include 和 Match 会报告并跳过。	Unsupported proxies, Include, and Match entries are reported and skipped.
+正在导入…	Importing…
+导入站点	Import servers
+请输入 SSH 配置文件路径	Enter an SSH configuration file path.
+请选择服务器	Select a server.
+私钥口令（未加密可留空）	Private key passphrase (optional for unencrypted keys)
+密码或私钥口令	Password or key passphrase
+凭据仅用于本次连接，不会保存到配置。	Credentials are used only for this connection and are not saved.
+连接	Connect
+确定{}“{name}”？	Confirm {} “{name}”?
+组内服务器会移到未分组，不会被删除。	Servers in this group will become ungrouped; they will not be deleted.
+仅删除保存的站点配置，不会删除远程服务器上的文件。	Only the saved server configuration is removed. Remote files are not deleted.
+系统软件任务正在执行，完成后才能删除当前服务器	Wait for the software operation to finish before deleting this server.
+正在识别系统和包管理器…	Detecting the operating system and package manager…
+请输入软件包名称，例如 nginx、git 或 curl	Enter a package name, such as nginx, git, or curl.
+正在搜索软件包…	Searching packages…
+正在读取已安装软件…	Reading installed packages…
+正在生成操作预览…	Preparing an operation preview…
+当前连接没有可用的管理员权限	Administrator privileges are unavailable for this connection.
+管理员密码包含无效字符或过长	The administrator password contains invalid characters or is too long.
+系统任务已排队，正在等待 SSH 通道…	System operation queued; waiting for the SSH channel…
+系统识别完成	System detection complete
+已识别 {}；当前版本支持 APT 软件管理	Detected {}; this version supports APT package management.
+系统识别失败	System detection failed
+{} · {} 项	{} · {} items
+已安装软件	Installed packages
+搜索结果	Search results
+软件包查询失败	Package query failed
+操作预览已就绪，尚未执行	Preview ready; nothing has run yet
+无法生成操作预览	Could not prepare the operation preview
+正在执行系统任务…	Running system operation…
+系统任务已完成	System operation complete
+系统任务失败 · 退出码 {}	System operation failed · Exit code {}
+操作返回错误，部分变更可能已生效。请查看输出并重新查询已安装状态，修复原因后再生成预览。	The operation returned an error and some changes may have taken effect. Review the output and check installed packages before preparing another preview.
+[退出码 {}]	[Exit code {}]
+任务结果未确认，请重新连接并检查已安装状态	Operation result unconfirmed. Reconnect and check installed packages.
+系统任务未执行	System operation did not run
+[任务错误] {e}	[Operation error] {e}
+SSH 连接中断，远程任务结果尚未确认。请重连并查询已安装软件。	SSH connection lost; the remote result is unconfirmed. Reconnect and check installed packages.
+[连接中断] {message}	[Connection lost] {message}
+查询服务器软件，预览并执行软件安装。	Find server packages, preview changes, and install software.
+重新识别系统	Detect system again
+连接服务器后管理系统软件	Connect to a server to manage software
+选择左侧服务器并连接。软件管理目前支持 Debian / Ubuntu 的 APT。	Select a server on the left and connect. Package management currently supports Debian / Ubuntu APT.
+尚未识别系统	System not detected
+root 会话	Root session
+通过 sudo 执行管理员操作	Administrator operations use sudo
+无可用管理员权限	Administrator privileges unavailable
+搜索软件包	Search packages
+软件包名称，如 nginx、git、curl	Package name, e.g. nginx, git, curl
+已安装	Installed
+更新软件源索引	Update package index
+任务输出 · {} · 退出码 {code}	Operation output · {} · Exit code {code}
+执行成功	Succeeded
+执行失败	Failed
+任务输出	Operation output
+任务执行期间不能切换服务器，请保持窗口和连接。	Keep the window and connection open. Servers cannot be switched during the operation.
+安装操作需先预览并确认。	Preview and confirm before installing.
+尚未执行系统任务	No system operation has run
+软件包	Package
+已安装版本	Installed version
+说明	Description
+操作	Action
+预览安装	Preview install
+安装…	Install…
+正在读取…	Loading…
+暂无软件包结果。输入名称搜索，或查看已安装软件。	No package results. Search by name or view installed packages.
+确认系统操作	Confirm system operation
+目标服务器：{} · {}@{}:{}	Target server: {} · {}@{}:{}
+安装 {}	Install {}
+请检查预览。只有点击下方确认按钮后才会执行。	Review the preview. Nothing runs until you confirm below.
+将执行的命令	Command to run
+管理员密码（sudo 需要时填写）	Administrator password (if required by sudo)
+sudo 管理员密码	Sudo administrator password
+仅用于本次提权，不保存，也不会写入命令或日志。	Used only for this elevation request; never saved or included in commands or logs.
+当前为 root 会话，无需再次提权。	This is a root session; no elevation is needed.
+留空时使用非交互 sudo；需要密码时请填写本次管理员密码。	Leave empty for noninteractive sudo, or enter the administrator password for this operation.
+当前服务器没有 sudo，请使用 root 或具备管理员权限的账号连接。	Sudo is unavailable. Connect as root or an account with administrator privileges.
+确认执行	Confirm and run
+调整文件栏宽度，上下方向键调整，Home 恢复均分	Resize file panes. Use Up/Down to adjust; Home resets equal widths.
+文件冲突任务已结束，未继续传输。	The file conflict operation ended; the transfer was not continued.
+{bytes} 字节	{bytes} bytes
+{:.2} {unit}（{bytes} 字节）	{:.2} {unit} ({bytes} bytes)
+修改时间未知	Modification time unknown
+修改于 {year:04}-{month:02}-{day:02} {:02}:{:02}:{:02} UTC	Modified {year:04}-{month:02}-{day:02} {:02}:{:02}:{:02} UTC
+冲突处理：{label}	Conflict action: {label}
+冲突规则范围：{label}	Conflict scope: {label}
+传入文件	Incoming file
+目标已有文件	Existing destination
+目标文件已存在	Destination file exists
+本地	Local
+{location}中已有同名文件，请选择如何处理。覆盖会替换目标文件的原有内容。	A file with this name already exists in {location}. Choose how to continue. Overwrite replaces its contents.
+处理方式	Action
+覆盖	Overwrite
+跳过	Skip
+应用范围	Apply to
+仅此文件	This file only
+本次批量传输	This batch
+当前连接	This connection
+以后连接此服务器	Future connections to this server
+上传	Upload
+下载	Download
+下一次文件冲突仍会询问。	Ask again for the next file conflict.
+应用于本次加入队列的这批{direction}，不影响其他批次。	Apply to this {direction} batch, without affecting other batches.
+应用于当前服务器连接内的后续{direction}；断开连接后失效。	Apply to subsequent {direction} operations in this connection; reset when disconnected.
+保存为此服务器的{direction}规则，后续连接也会使用。可在服务器的更多菜单中重置。	Save this server's {direction} rule for future connections. Reset it from the server's actions menu.
+取消队列	Cancel queue
+覆盖文件	Overwrite file
+跳过文件	Skip file
+本地目录已创建	Local folder created.
+本地文件已重命名	Local file renamed.
+连接已切换，采集已停止	The connection changed; sampling stopped.
+请先连接服务器	Connect to a server first.
+连接已切换，系统软件操作已停止	The connection changed; software operation stopped.
+安装预览已失效，请重新预览操作	The installation preview expired. Prepare a new preview.
+安装预览不属于当前任务，请重新预览	The installation preview belongs to a different operation. Prepare it again.
+管理员密码格式无效	Invalid administrator password format.
+连接已切换，传输已停止	The connection changed; transfer stopped.
+服务器会话已变化，拒绝传输	The server session changed; transfer refused.
+连接已断开，请重新连接后重试	Disconnected. Reconnect and try again.
+连接已切换，操作已忽略	The connection changed; operation ignored.
+连接已失效，请重新连接	The connection expired. Reconnect.
+远程目录已创建	Remote folder created.
+远程文件已重命名	Remote file renamed.
+远程文件	Remote files
+本地文件	Local files
+SFTP · 等待 SSH 认证	SFTP · Waiting for SSH authentication
+SFTP · 等待 SSH 连接	SFTP · Waiting for SSH
+SFTP · 不可用	SFTP · Unavailable
+SFTP · {count} 个项目	SFTP · {count} items
+{count} 个项目	{count} items
+远程上级目录	Remote parent directory
+本地上级目录	Local parent directory
+远程路径	Remote path
+本地路径	Local path
+刷新远程目录	Refresh remote directory
+刷新本地目录	Refresh local directory
+已选 {} 项	{} selected
+全选	Select all
+清空	Clear
+筛选远程文件	Filter remote files
+筛选本地文件	Filter local files
+远程文件操作	Remote file actions
+本地文件操作	Local file actions
+新建文件夹	New folder
+重命名	Rename
+按文件名筛选	Filter by name
+大小	Size
+修改时间	Modified
+取消选择	Deselect
+选择	Select
+文件夹	Folder
+链接	Link
+在右上角连接 SSH 后，即可浏览 SFTP 文件	Connect SSH at the top right to browse SFTP files.
+SSH 已连接，但 SFTP 不可用（服务器未启用或当前账号无访问权限）。系统软件、资源概览和系统日志仍可使用。	SSH is connected, but SFTP is unavailable (disabled on the server or inaccessible to this account). Software, Resources, and System logs remain available.
+输入路径后按 Enter	Enter a path and press Enter.
+没有匹配的项目	No matching items
+此文件夹为空	This folder is empty
+远程目录：{}	Remote directory: {}
+本地目录：{}	Local directory: {}
+新名称	New name
+文件夹名称	Folder name
+正在处理…	Working…
+创建文件夹	Create folder
+继续队列	Resume queue
+暂停队列	Pause queue
+收起活动面板	Collapse activity panel
+展开活动面板	Expand activity panel
+全部	All
+进行中	Active
+失败 / 取消	Failed / Canceled
+已完成	Completed
+重试失败项	Retry failed transfers
+清除已结束的传输	Clear finished transfers
+等待中	Queued
+等待文件冲突处理	Waiting for a file conflict decision
+已跳过 {} 个文件	Skipped {} files
+已完成 · 跳过 {} 个文件	Completed · Skipped {} files
+已取消	Canceled
+失败：{e}	Failed: {e}
+取消传输	Cancel transfer
+重试传输	Retry transfer
+暂无传输任务	No transfers
+传输 ({})	Transfers ({})
+传输	Transfers
+操作日志	Operation log
+设置	Settings
+应用设置	Application settings
+常规	General
+语言	Language
+外观	Appearance
+主题	Theme
+深色	Dark
+浅色	Light
+文件	Files
+隐藏文件	Hidden files
+显示隐藏文件	Show hidden files
+隐藏隐藏文件	Hide hidden files
+监控	Monitoring
+资源刷新间隔	Resource refresh interval
+每 3 秒	Every 3 seconds
+每 5 秒	Every 5 seconds
+每 10 秒	Every 10 seconds
+每 30 秒	Every 30 seconds
+自定义此计算机上的应用。	Customize this application on your computer.
+选择整个应用使用的语言。	Choose the language used throughout the application.
+选择配色主题。	Choose a color theme.
+显示或隐藏本地和远程列表中以点开头的文件。	Show or hide dotfiles in local and remote file lists.
+仅在资源页面打开时刷新数值。	Refresh resource values only while the Resources page is open.
+偏好设置保存在此计算机上。文件分栏和冲突选择仍按服务器独立保存。	Preferences are saved on this computer. File pane sizes and conflict choices remain separate for each server.
+更改会自动保存。	Changes are saved automatically.
+无法保存设置：{error}	Could not save settings: {error}
+浏览…	Browse…
+浏览私钥文件	Browse for a private key
+选择 SSH 私钥	Choose an SSH private key
+选择私钥	Select key
+所有文件	All files
+每 {seconds} 秒	Every {seconds} seconds
+选择 SSH 私钥文件	Select SSH private key
+选择文件	Select file
+配置无法加载。修复后才能保存设置。	Configuration could not be loaded. Repair it before saving settings.
+无法保存设置：{error:#}	Could not save settings: {error:#}
+{label}不能为空	{label} cannot be empty.
+{label}过长	{label} is too long.
+{label}包含控制字符	{label} contains control characters.
+分组名称已存在	A group with this name already exists.
+所选分组不存在	The selected group does not exist.
+服务器不存在	Server not found.
+分组不存在	Group not found.
+主机地址应只包含主机名或 IP 地址	Host address must contain only a host name or IP address.
+IPv6 地址括号格式无效	Invalid IPv6 address brackets.
+IPv6 地址格式无效；端口请填入单独的端口字段	Invalid IPv6 address; enter the port in its own field.
+SSH 端口必须介于 1 和 65535 之间	SSH port must be between 1 and 65535.
+用户名不能包含空白字符	Username cannot contain whitespace.
+请选择私钥文件	Select a private key file.
+读取配置文件失败	Could not read the configuration file.
+配置文件过大	The configuration file is too large.
+配置文件格式错误，原文件已保留	Invalid configuration file; the original has been preserved.
+配置内容无效	Invalid configuration.
+无法确定配置目录；请提供配置文件路径	Could not determine the configuration directory; specify a configuration file.
+初始远程目录	Initial remote directory
+服务器标识	Server ID
+分组标识	Group ID
+主机地址	Host address
+系统日志（journalctl）	Journal (journalctl)
+系统日志 /var/log/syslog	System log /var/log/syslog
+系统日志 /var/log/messages	System log /var/log/messages
+认证日志 /var/log/auth.log	Authentication /var/log/auth.log
+内核日志 /var/log/kern.log	Kernel /var/log/kern.log
+APT 安装历史	APT history
+部分消息内容被 journalctl 省略或为二进制，未显示完整内容	Some journal messages were omitted or contain binary data.
+当前 SSH 用户无权读取 {source}	The SSH account cannot read {source}.
+{time} · 显示上次成功结果	{time} · Showing the last successful result
+{time} · 显示上次成功数值	{time} · Showing the last successful values
+选择 {name}	Select {name}
+取消选择 {name}	Deselect {name}
+已安装 {name}	Installed {name}
+预览安装 {name}	Preview install {name}
+名称 {order}	Name {order}
+大小 {order}	Size {order}
+修改时间 {order}	Modified {order}
+读取远程资源信息失败	Could not read remote resource values
+读取资源失败（退出码 {}）：{}	Could not read resources (exit code {}): {}
+无法识别资源采样响应（需要 Linux /proc）	Unrecognized resource response (Linux /proc is required)
+资源采样响应不完整，请重试	Incomplete resource response; try again
+资源采样缺少 {name} 起始标记	Resource response is missing the {name} start marker
+资源采样 {name} 内容不完整	Incomplete {name} resource data
+资源采样缺少 {name} 结束标记	Resource response is missing the {name} end marker
+资源采样响应包含意外内容	Unexpected content in the resource response
+运行时间	Uptime
+{name} 暂不可用：{error}	{name} unavailable: {error}
+缺少 /proc/stat CPU 计数	Missing CPU counters in /proc/stat
+CPU 计数不完整	Incomplete CPU counters
+无效 CPU 计数	Invalid CPU counters
+CPU 计数溢出	CPU counter overflow
+CPU 空闲计数溢出	CPU idle counter overflow
+缺少逻辑 CPU 信息	Missing logical CPU information
+KiB 字节数溢出	KiB conversion overflow
+缺少 {key}	Missing {key}
+缺少内存值	Missing memory value
+无效内存单位	Invalid memory unit
+内存总量为零	Total memory is zero
+可用内存溢出	Available memory overflow
+内核未提供 MemAvailable；可用内存使用保守估算	The kernel does not provide MemAvailable; available memory is conservatively estimated
+内存	Memory
+数值不是有效非负数	The value must be a finite nonnegative number
+缺少负载值	Missing load values
+缺少运行时间	Missing uptime
+网卡计数不完整	Incomplete network counters
+网卡	Network interface
+网络计数暂不可用：缺少 /proc/net/dev 数据	Network counters unavailable: missing /proc/net/dev data
+磁盘行不完整	Incomplete disk row
+缺少挂载目录	Missing mount point
+磁盘计数超出总量	Disk values exceed total capacity
+磁盘空间暂不可用：df 未返回有效数据	Disk capacity unavailable: df returned no valid data
+日志来源检测失败：{}	Log source detection failed: {}
+日志来源检测输出不完整	Incomplete log source detection response
+当前 SSH 用户无权读取 {}	The current SSH account cannot read {}
+未发现当前用户可读取的系统日志来源	No system log sources readable by this account were found
+日志行数应为 1–{MAX_LINES}	Log entry limit must be between 1 and {MAX_LINES}
+日志优先级应为 0–7	Log priority must be between 0 and 7
+服务名称仅支持字母、数字和 @ . _ : + -，且需以字母或数字开头	Service names must start with a letter or digit and contain only letters, digits, and @ . _ : + -
+无法读取 {}（退出码 {}）：{}{}	Could not read {} (exit code {}): {}{}
+日志行数超出限制	Log entry count exceeds the limit
+journalctl 返回了无效 JSON，未将解析失败当作空日志	journalctl returned invalid JSON; this is not treated as an empty log
+journalctl 日志记录应为 JSON 对象	Journal entries must be JSON objects
+[二进制内容]	[binary content]
+[消息内容不可用]	[message unavailable]
+journalctl 返回了不支持的消息格式	journalctl returned an unsupported message format
+未识别	Unknown
+远程命令失败（退出码 {}）：{}{}	Remote command failed (exit code {}): {}{}
+已识别 {}，当前版本仅支持 Debian/Ubuntu 的 APT 操作	Detected {}; this version only supports Debian/Ubuntu APT operations
+服务器系统识别输出不完整	Incomplete system detection response
+服务器系统识别缺少字段	System detection response is missing fields
+服务器用户编号无效	Invalid server user ID
+sudo 识别结果无效	Invalid sudo detection result
+Linux（发行版未知）	Linux (unknown distribution)
+
+退出码 {}	Exit code {}
+已跳过	Skipped
+不会升级	Does not upgrade
+更新 APT 软件源索引，以读取最新可用软件包信息。不会升级已安装的软件包。	Refresh the APT package index to retrieve available package information. Does not upgrade installed packages.
+此操作需要网络与管理员权限。	This operation requires network access and administrator privileges.
+无法访问 SSH 私钥文件	Cannot access SSH private key file
+SSH 私钥路径必须是文件	SSH private key path must be a file
+服务器拒绝了 SSH 密钥；请检查用户名和 authorized_keys	Server rejected the SSH key; check the username and authorized_keys
+无法加载 SSH 私钥；请检查文件格式和私钥口令	Cannot load SSH private key; check the file format and passphrase
+SSH 私钥认证失败；请检查密钥文件、私钥口令和服务器认证策略	SSH private key authentication failed; check the key file, passphrase and server authentication policy
+SSH 主机密钥发生变化。已保存：{expected}；当前：{observed}。未尝试认证，请通过可信渠道核实服务器身份。	SSH host key changed. Saved: {expected}; current: {observed}. Authentication was not attempted. Verify the server identity through a trusted channel.
+
+展开 {name}	Expand {name}
+收起 {name}	Collapse {name}
+编辑本地路径	Edit local path
+编辑远程路径	Edit remote path
+复制本地路径	Copy local path
+复制远程路径	Copy remote path
+复制路径失败：{error}	Cannot copy path: {error}
+
+详细列表	Detailed list
+平铺图标	Icon grid
+文件	File
+字节	bytes
+权限	Permissions
+
+终端	Terminal
+连接服务器后使用终端	Connect a server to use the terminal
+尚未启动	Not started
+正在启动终端…	Starting terminal…
+交互式 SSH	Interactive SSH
+终端已退出（{code}）	Terminal exited ({code})
+终端已关闭	Terminal closed
+终端连接失败	Terminal connection failed
+复制选中文本	Copy selected text
+粘贴到终端	Paste into terminal
+清空终端显示	Clear terminal display
+重新启动终端	Restart terminal
+关闭终端	Close terminal
+交互式 SSH 终端	Interactive SSH terminal
+Ctrl+C 中断 · Ctrl+Shift+C 复制 · Ctrl+Shift+V 粘贴	Ctrl+C interrupt · Ctrl+Shift+C copy · Ctrl+Shift+V paste
+主导航	Main navigation
+首页	Home
+概览	Overview
+快速开始	Quick start
+所有活动	All activity
+连接、传输和操作记录集中显示在这里。	Connection, transfer and operation records in one place.
+你的服务器工作台	Your server workbench
+通过 SSH 连接，无需远程 Agent。	Connect over SSH. No remote agent needed.
+一个活动连接	One active connection
+当前没有活动连接	No active connections
+你的工作空间	YOUR WORKSPACE
+服务器管理，轻松有序。	Your servers. Within reach.
+连接你的服务器，在一个工作台中管理文件、软件与系统状态。	Connect to your servers and manage files, software and system health in one workspace.
+浏览服务器	Browse servers
+已保存的服务器	Saved servers
+服务器分组	Server groups
+活动连接	Active connections
+进行中的传输	Active transfers
+你的服务器	Your servers
+选择服务器，查看详情并连接。	Choose a server to view its details and connect.
+从第一台服务器开始	Start with your first server
+添加 SSH 服务器，或导入已有配置。	Add an SSH server, or import your existing configuration.
+未连接	Not connected
+选择一台服务器	Choose a server
+从左侧选择服务器，连接后即可开始管理。	Select a server from the sidebar and connect to start managing it.
+正在建立安全连接…	Establishing a secure connection…
+连接后即可使用文件、软件、资源、日志与终端。	Connect to access files, software, resources, logs and your terminal.
+主机	Host
+用户	User
+密码与私钥口令仅用于本次连接，不会保存到配置。	Passwords and key passphrases are used only for this connection and are never saved to your configuration.
+通知与活动	Notifications & activity
+本次会话中的连接、传输与操作记录，最新记录显示在前。	Connection, transfer and operation records from this session, newest first.
+显示最近 100 条记录。活动记录仅保留在本次会话。	Showing the latest 100 records. Activity is kept for this session only.
+应用偏好设置	Application preferences
+服务器列表操作	Server list actions
+服务器树	Server tree
+展开全部	Expand all
+折叠全部	Collapse all
+展开分组	Expand group
+折叠分组	Collapse group
+空分组	Empty group
+未找到匹配的服务器或分组	No matching servers or groups
+新建分组来整理服务器，或添加第一台服务器。	Create a group to organize your servers, or add your first server.
+{} 个分组 · {} 台服务器	{} groups · {} servers
+解散分组（保留服务器）	Dissolve group (keep servers)
+解散分组	Dissolve group
+删除分组及服务器	Delete group & servers
+只移除分组，所有服务器配置保留并移到根目录。	Only the group is removed. All server profiles are kept and moved to the root.
+将删除此分组及其 {} 台服务器的本地配置。不会删除远程服务器或远程文件。	This deletes the group and its {} saved server profiles. No remote servers or files will be deleted.
+目标已不存在，请关闭对话框后重试。	The target no longer exists. Close this dialog and try again.
+无法保存分组顺序：{error:#}	Could not save group order: {error:#}
+
+传输进度	Transfer progress
+耗时 {elapsed}	Elapsed {elapsed}
+剩余 {eta}	Remaining {eta}
+实际传输 {bytes}	Transferred {bytes}
+平均 {speed}	Average {speed}
+正在准备传输…	Preparing transfer…
+正在完成传输…	Finalizing transfer…
+跟随系统	Follow system

@@ -1,0 +1,5 @@
+[files]
+extend-exclude = ["/target/**", "/artifacts/**", "Cargo.lock", "crates/arcnix-desktop/assets/vendor/**"]
+
+[default.extend-words]
+arcnix = "arcnix"
