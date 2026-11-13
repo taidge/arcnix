@@ -22,7 +22,7 @@ cargo run --locked -p arcnix-desktop --bin arcnix
 
 ## 开发与发布
 
-CI 检查 Rustfmt、typos、Clippy、测试、文档和 crate 打包，覆盖 Rust 1.99 的 Windows 工作区及 Linux 核心库。推送匹配工作区版本的 `v*` tag 可触发 crates.io 发布。
+CI 检查工作流、Rustfmt、typos、Clippy、测试、文档和 crate 打包，覆盖 Rust 1.99 的 Windows 工作区及 Linux 核心库。推送匹配工作区版本的 `v*` tag 可触发 crates.io 发布。
 
 [开发说明](docs/development.md) · [发布流程与令牌配置](docs/releasing.md) · [更新记录](CHANGELOG.md)
 

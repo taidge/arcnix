@@ -132,7 +132,7 @@ Ctrl+C 在有选中文字时复制，否则向远程程序发送中断；Ctrl+Sh
 
 ```powershell
 cargo metadata --no-deps --format-version 1
-cargo fmt --all -- --check
+cargo +nightly-2026-11-04 fmt --all -- --check
 cargo test --workspace --locked
 cargo clippy --workspace --all-targets --locked -- -D warnings
 ```

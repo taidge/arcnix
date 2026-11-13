@@ -1,0 +1,13 @@
+name: Cargo cache
+description: Cache normal Cargo registry and workspace build directories.
+runs:
+  using: composite
+  steps:
+    - uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
+      with:
+        path: |
+          ~/.cargo/registry
+          ~/.cargo/git
+          target
+        key: ${{ runner.os }}-${{ runner.arch }}-rust-1.99-${{ hashFiles('Cargo.lock') }}
+        restore-keys: ${{ runner.os }}-${{ runner.arch }}-rust-1.99-

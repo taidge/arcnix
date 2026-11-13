@@ -22,7 +22,7 @@ To use a specific configuration, append `-- --config ./my-config.json`.
 
 ## Development and releases
 
-CI checks Rustfmt, typos, Clippy, tests, documentation and crate packaging. It covers the Windows workspace and Linux core library on Rust 1.99. Matching `v*` tags trigger publication to crates.io.
+CI checks workflows, Rustfmt, typos, Clippy, tests, documentation and crate packaging. It covers the Windows workspace and Linux core library on Rust 1.99. Matching `v*` tags trigger publication to crates.io.
 
 [Development guide](docs/development.md) · [Release setup](docs/releasing.md) · [Changelog](CHANGELOG.md)
 
