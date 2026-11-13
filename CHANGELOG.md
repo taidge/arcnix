@@ -1,5 +1,11 @@
 # 改进记录
 
+## 未发布 — 多平台版本构建
+
+- 仅版本 tag 触发 macOS ARM64、Windows AMD64、Linux ARM64／AMD64 的原生测试和 release 构建。
+- 自动打包应用、文档和许可证，四个平台全部成功后上传 GitHub Release 附件及 SHA-256 校验文件。
+- crates.io 发布改为显式启用，默认保持停止状态；补充各平台运行依赖和当前界面限制。
+
 ## 0.1.1 — 桌面 crate 更名为 arcnix
 
 - 桌面 crate 从 `arcnix-desktop` 更名为 `arcnix`，源码目录同步调整为 `crates/arcnix`。

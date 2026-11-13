@@ -1,6 +1,7 @@
 /target/
 *.log
 /artifacts/
+/dist/
 __pycache__/
 *.py[cod]
 .venv/

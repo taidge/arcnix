@@ -15,12 +15,6 @@
 构建需要 **Rust 1.99+**、Windows MSVC 构建工具、原生 Windows Perl（如 Strawberry Perl）和 NASM；运行需要 WebView2 Runtime。SSH 使用静态链接的 OpenSSL，无需系统 SSH 或 OpenSSL。
 
 ```powershell
-cargo install arcnix --version 0.1.1 --locked
-```
-
-或从源码运行：
-
-```powershell
 cargo run --locked -p arcnix --bin arcnix
 ```
 
@@ -28,7 +22,7 @@ cargo run --locked -p arcnix --bin arcnix
 
 ## 开发与发布
 
-CI 检查工作流、Rustfmt、typos、Clippy、测试、文档和 crate 打包，覆盖 Rust 1.99 的 Windows 工作区及 Linux 核心库。推送匹配工作区版本的 `v*` tag 可触发 crates.io 发布。
+CI 检查工作流、Rustfmt、typos、Clippy、测试、文档和 crate 打包。仅匹配版本的 `v*` tag 额外构建 macOS ARM64、Windows AMD64、Linux ARM64 和 AMD64 的 GitHub Release 压缩包，并附 SHA-256 校验文件。crates.io 发布目前关闭，启用方式见发布说明。
 
 [开发说明](docs/development.md) · [发布流程与令牌配置](docs/releasing.md) · [更新记录](CHANGELOG.md)
 

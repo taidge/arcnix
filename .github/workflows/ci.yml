@@ -17,6 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - run: go run github.com/rhysd/actionlint/cmd/actionlint@v1.7.12
+      - run: python3 -m py_compile tools/check_release.py tools/package_release.py
 
   format:
     name: Rustfmt
